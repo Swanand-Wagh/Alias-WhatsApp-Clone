@@ -1,0 +1,51 @@
+/* HEADER */
+.sidebar {
+  display: flex;
+  flex: 0.3;
+  flex-direction: column;
+  border-radius: 10px 0 0 10px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 1px solid lightgray;
+  padding: 20px;
+}
+.right {
+  display: flex;
+  min-width: 10vw;
+  justify-content: space-between;
+}
+.right > .MuiSvgIcon-root {
+  margin-right: 2vw;
+  font-size: 24px !important;
+}
+/* HEADER ENDS */
+
+/* SEARCH */
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  height: 40px;
+  padding: 25px;
+}
+.wrapper {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+}
+.wrapper > input {
+  outline: none;
+  border: none;
+  margin-left: 20px;
+  width: 90%;
+}
+.wrapper > .MuiSvgIcon-root {
+  color: gray;
+}
