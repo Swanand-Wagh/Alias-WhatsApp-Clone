@@ -4,13 +4,16 @@
   flex: 0.3;
   flex-direction: column;
   border-radius: 10px 0 0 10px;
+  background-color: #fff;
 }
 .header {
+  border-radius: 10px 0 0 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-right: 1px solid lightgray;
   padding: 20px;
+  background-color: #ededed;
 }
 .right {
   display: flex;
@@ -49,3 +52,29 @@
 .wrapper > .MuiSvgIcon-root {
   color: gray;
 }
+/* SEARCH ENDS */
+
+/* SIDEBAR CHAT */
+.chats {
+  overflow-y: scroll;
+}
+.sidebar_chat {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1.55px solid #f6f6f6;
+  cursor: pointer;
+}
+.sidebar_chat:hover {
+  background-color: #ededed;
+}
+.sidebarChat_info {
+  margin-left: 15px;
+}
+.sidebarChat_info > h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.sidebarChat_info > p {
+  font-size: 14px;
+}
+/* SIDEBAR CHAT ENDS */

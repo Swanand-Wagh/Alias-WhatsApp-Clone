@@ -1,5 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
+import SidebarChat from "./SidebarChat";
 import { Avatar, IconButton } from "@material-ui/core";
 import DonutLargeIcon from "@material-ui/icons/DonutLarge";
 import ChatIcon from "@material-ui/icons/Chat";
@@ -29,7 +30,19 @@ function Sidebar() {
           <input type="text" placeholder="Search or start new chat" />
         </div>
       </div>
-      <div className="chats"></div>
+      <div className="chats">
+        <SidebarChat />
+        <SidebarChat />
+        <SidebarChat />
+        <SidebarChat />
+        <SidebarChat />
+        <SidebarChat />
+        <SidebarChat />
+        <SidebarChat />
+        <SidebarChat />
+        <SidebarChat />
+        <SidebarChat />
+      </div>
     </div>
   );
 }
