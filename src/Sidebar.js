@@ -8,6 +8,12 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 import SearchOutlined from "@material-ui/icons/SearchOutlined";
 
 function Sidebar() {
+  const addNewChat = () => {
+    const roomName = prompt("ENTER A CHAT ROOM NAME ?");
+    if (roomName) {
+      // Do something...
+    }
+  };
   return (
     <div className="sidebar">
       <div className="header">
@@ -30,15 +36,10 @@ function Sidebar() {
           <input type="text" placeholder="Search or start new chat" />
         </div>
       </div>
-      <div className="chats">
-        <SidebarChat />
-        <SidebarChat />
-        <SidebarChat />
-        <SidebarChat />
-        <SidebarChat />
-        <SidebarChat />
-        <SidebarChat />
-        <SidebarChat />
+      <div className="addNewChat" onClick={addNewChat}>
+        <h2>Add New Chat Room !!!</h2>
+      </div>
+      <div className="sidebar_chats">
         <SidebarChat />
         <SidebarChat />
         <SidebarChat />
