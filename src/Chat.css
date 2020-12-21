@@ -31,5 +31,63 @@
   background: url("bgimg.png");
   background-repeat: repeat;
   background-position: center;
+  padding: 30px;
+  overflow-y: scroll;
+}
+.chat_message {
+  position: relative;
+  font-size: 16px;
+  padding: 7.5px 10px;
+  width: fit-content;
+  background-color: #fff;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.timestamp {
+  position: relative;
+  bottom: -5px;
+  margin-left: 12px;
+  font-size: x-small;
+}
+.chat_name {
+  position: absolute;
+  top: -13.5px;
+  font-size: x-small;
+  font-weight: 800;
+  letter-spacing: 1.15px;
+}
+.chat_receiver {
+  margin-left: auto;
+  background-color: #dcf8c6;
 }
 /* CHAT BODY ENDS */
+/* CHAT FOOTER */
+.chat_footer {
+  display: flex;
+  height: 62px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid lightgray;
+}
+.chat_footer > form {
+  flex: 1;
+  display: flex;
+  border: none;
+  outline: none;
+}
+.chat_footer > form > input {
+  flex: 1;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 12px;
+  align-self: center;
+  outline: none;
+}
+.chat_footer > form > button {
+  display: none;
+}
+.chat_footer > .MuiSvgIcon-root {
+  color: gray;
+  padding: 10px;
+}
+/* CHAT FOOTER ENDS */
