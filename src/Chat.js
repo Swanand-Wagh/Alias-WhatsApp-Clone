@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Chat.css";
 import { Avatar, IconButton } from "@material-ui/core";
 import SearchOutlined from "@material-ui/icons/SearchOutlined";
 import { AttachFile, InsertEmoticon, Mic, MoreVert } from "@material-ui/icons";
 
 function Chat() {
+  const [input, setInput] = useState("");
+  const sendMessage = (e) => {
+    e.preventDefault(); // prevent refreshing of page
+    setInput(""); // emptying input after "send"
+  };
+
   return (
     <div className="chat">
       <div className="chat_header">
@@ -36,9 +42,16 @@ function Chat() {
         <IconButton>
           <AttachFile />
         </IconButton>
-        <form action="#">
-          <input type="text" placeholder="Type a message" />
-          <button type="submit">Send</button>
+        <form>
+          <input
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            type="text"
+            placeholder="Type a message"
+          />
+          <button onClick={sendMessage} type="submit">
+            Send
+          </button>
         </form>
         <IconButton>
           <Mic />

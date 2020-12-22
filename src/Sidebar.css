@@ -58,26 +58,13 @@
 .sidebar_chats {
   overflow-y: scroll;
 }
-.sidebar_chat,
-.addNewChat {
+.sidebarChat {
   display: flex;
   padding: 20px;
   border-bottom: 1.55px solid #f6f6f6;
   cursor: pointer;
 }
-.addNewChat {
-  display: flex;
-  justify-content: center;
-  text-transform: capitalize;
-  text-align: center;
-  width: 100%;
-  font-style: italic;
-  font-family: cursive;
-}
-.sidebar_chat:hover {
-  background-color: #ededed;
-}
-.addNewChat:hover {
+.sidebarChat:hover {
   background-color: #ededed;
 }
 .sidebarChat_info {
