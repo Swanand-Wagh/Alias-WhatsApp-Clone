@@ -26,6 +26,6 @@ yarn-error.log*
 
 firebase-config.js
 /.firebase
-/.github\workflows
+/.github
 /.vscode
 /build
