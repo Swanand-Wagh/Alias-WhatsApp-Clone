@@ -78,3 +78,7 @@
   font-size: 14px;
 }
 /* SIDEBAR CHAT ENDS */
+a {
+  text-decoration: none !important;
+  color: black;
+}
